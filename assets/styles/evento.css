@@ -1,0 +1,115 @@
+#body-main {
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+}
+
+.special-title {
+    width: 100%;
+    font-size: 3.5em;
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+    margin: 70px 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.special-title:after,
+.special-title:before {
+    content: '';
+    height: 2px;
+    max-width: 550px;
+    width: 50%;
+    background-color: black;
+    position: relative;
+}
+
+.special-title:after {
+    margin-left: 10px;
+}
+
+.special-title:before {
+    margin-right: 10px;
+}
+
+#event-content{
+    max-width:900px;
+    margin:0 auto;
+    margin-bottom:100px;
+}
+
+#event-img{
+    width:100%;
+    aspect-ratio:2/1;
+    background-color:#E1E1E1;
+    margin-bottom:30px;
+    background-image:url(../images/car-event.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+#event-description{
+    padding:5px;
+}
+
+#event,
+#location{
+    margin-bottom:50px;
+}
+
+#event h2{
+    font-size:4em;
+    font-weight:400;
+    font-style:italic;
+    color:rgb(27, 27, 27);
+    margin-bottom:30px;
+}
+
+#event p{
+    font-size:2.7em;
+    color:#555555;
+    font-weight:500;
+}
+
+#location p{
+    font-size:4em;
+    font-weight:400;
+    font-style:italic;
+    color:rgb(48, 48, 48);
+}
+
+#date{
+    font-size:1em;
+    font-weight:600;
+    font-style:italic;
+    color:#EB2D2D;
+}
+
+#back{
+    font-size:2.8em;
+    color:rgb(35, 35, 35);
+}
+
+#back:visited{
+    color:rgb(35, 35, 35);
+}
+
+@media screen and (max-width:500px){
+    #event-description p,
+    #event-description h2{
+        text-align:center;
+    }
+}
+
+@media screen and (max-width:200px){
+    .special-title{
+        display:block;
+        word-wrap:break-word;
+        max-width:90%;
+    }
+}

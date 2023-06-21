@@ -1,0 +1,440 @@
+#main-presentation {
+    width: 100%;
+    min-height: 670px;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-color: #010101;
+}
+
+#presentation-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    max-width: 90%;
+    position: relative;
+    top: 150px;
+    left: 200px;
+}
+
+.presentation-item {
+    font-size: 4.5em;
+    font-style: italic;
+    padding: 1px;
+    text-align: center;
+    background-color: #EB2D2D;
+    color: white;
+    margin-bottom: 10px;
+    line-height: 80px;
+    word-wrap: break-word;
+    border-radius: 5px 0 70px 5px;
+    transition: translate .5s;
+}
+
+.presentation-item:hover {
+    translate: 5px;
+}
+
+.presentation-item:nth-child(1) {
+    max-width: 320px;
+
+}
+
+.presentation-item:nth-child(2) {
+    max-width: 260px;
+
+}
+
+.presentation-item:nth-child(3) {
+    max-width: 200px;
+
+}
+
+.presentation-item:nth-child(4) {
+    color: black;
+    font-size: 2em;
+    text-align: left;
+    line-height: 60px;
+    max-width: 360px;
+    margin: 10px 0 0;
+    background-color: #F1F1F1;
+}
+
+#main-showcase {
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.special-title {
+    width: 100%;
+    font-size: 3.5em;
+    text-align: center;
+    font-weight: 500;
+    margin: 70px 0 50px;
+}
+
+.special-title:after,
+.special-title:before {
+    content: '';
+    display: inline-block;
+    height: 2px;
+    max-width: 300px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    top: -10px;
+}
+
+.special-title:after {
+    margin-left: 10px;
+}
+
+.special-title:before {
+    margin-right: 10px;
+}
+
+#showcase-cars {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.showcase-car {
+    margin: 10px;
+}
+
+.showcase-car h3 {
+    max-width: 250px;
+    margin-top: 8px;
+    font-size: 2.2em;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.showcase-car p {
+    max-width: 220px;
+    font-size: 1.8em;
+    font-weight: 500;
+    color: rgb(75, 75, 75);
+}
+
+.car-image {
+    min-width: 200px;
+    max-width: 270px;
+
+}
+
+.car-image img {
+    height: 200px;
+    border-radius: 3px;
+}
+
+.car-btn {
+    background-color: #EB2D2D;
+    color: white;
+    font-size: 2.4em;
+    padding: 8px 12px;
+    border: none;
+    margin-top: 20px;
+    font-weight: 100;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+#main-section {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#main-section h3 {
+    color: #F1F1F1;
+    font-size: 3.6em;
+    font-weight: 400;
+    font-style: italic;
+    margin-left: -300px;
+}
+
+#services,
+#depositions {
+    height: 100%;
+    min-height: 380px;
+    max-width: 100%;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+#services {
+    background-color: #242424;
+}
+
+#services-content {
+    display: flex;
+    justify-content: space-between;
+    min-width: 500px;
+    max-width: 90%;
+}
+
+.services-btn {
+    background-color: #EB2D2D;
+    color: white;
+    font-size: 2.2em;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 20px;
+    font-weight: 100;
+    cursor: pointer;
+    border-radius: 2px;
+    align-self: flex-end;
+    -webkit-box-shadow: inset 0px 3px 5px 0px rgba(255, 255, 255, 0.8);
+    -moz-box-shadow: inset 0px 3px 5px 0px rgba(255, 255, 255, 0.8);
+    box-shadow: inset 0px 3px 5px 0px rgba(255, 255, 255, 0.8);
+    margin-left: 5px;
+}
+
+.service-item {
+    font-size: 2.5em;
+    color: #F1F1F1;
+    list-style: none;
+}
+
+.service-item:before {
+    display: inline-block;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    font-size: 50px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 6px;
+    right: 8px;
+}
+
+#depositions {
+    background-color: #EB2D2D;
+}
+
+#depositions p {
+    color: rgb(243, 243, 243);
+    font-size: 2.3em;
+    max-width: 480px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+#actual-deposition {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    min-width: 500px;
+}
+
+#toggle-deposition {
+    display: flex;
+    justify-content: space-between;
+    min-width: 80px;
+    max-width: 100px;
+}
+
+.toggle-arrow {
+    width: 15px;
+    height: 30px;
+}
+
+#deposition-name {
+    font-size: 2.4em;
+    color: #242424;
+}
+
+#main-contact {
+    width: 100%;
+    min-height: 600px;
+}
+
+#contact-form {
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #b4b4b4;
+    padding: 0 10px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 8px 15px;
+    border: 1px solid #d3d3d3;
+    outline: none;
+    color: black;
+    border-radius: 3px;
+    margin: 8px 0;
+    font-size: 2em;
+    font-style: italic;
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+    color: #d3d3d3;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #6f6f6f;
+}
+
+#contact-form .large-input,
+#contact-form .textarea-container {
+    width: 100%;
+    text-align: left;
+}
+
+#contact-form .half-input {
+    min-width: 200px;
+    width: 48%;
+    text-align: left;
+}
+
+#contact-form button {
+    background-color: #EB2D2D;
+    color: white;
+    font-size: 2.4em;
+    width:100%;
+    max-width:120px;
+    padding: 8px 0;
+    border: none;
+    margin-top: 20px;
+    font-weight: 100;
+    cursor: pointer;
+    border-radius: 2px;
+    margin: 10px auto 20px;
+    font-style: italic;
+}
+
+@media screen and (max-width:1000px) {
+    #presentation-list {
+        position: static;
+    }
+
+    #main-presentation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+    }
+
+    .special-title:after,
+    .special-title:before {
+        max-width: 50px;
+    }
+
+    #services,
+    #depositions {
+        width: 100%;
+        padding: 50px 10px;
+    }
+
+    #services-content {
+        min-width: 10px;
+        flex-wrap: wrap;
+    }
+
+    #actual-deposition {
+        min-width: 10px;
+        max-width: 400px;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    #toggle-deposition {
+        margin-right: 20px;
+    }
+
+    #main-section h3 {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #main-presentation {
+        min-height: 500px;
+    }
+
+    .presentation-item {
+        font-size: 3em;
+        line-height: 60px;
+    }
+
+    .presentation-item:hover {
+        translate: 0px 5px;
+    }
+
+    .presentation-item:nth-child(4) {
+        font-size: 1.5em;
+        max-width: 300px;
+        line-height: 50px;
+    }
+
+    .special-title:before {
+        display: none;
+    }
+
+    .special-title:after {
+        display: block;
+        max-width: 90%;
+        margin: 15px auto;
+    }
+
+    #services-content {
+        justify-content: center;
+    }
+
+    .car-image {
+        min-width: 10px;
+        max-width: 100%;
+    }
+
+    .services-list {
+        width: 100%;
+        text-align: center;
+    }
+
+    .service-item {
+        margin-bottom: 10px;
+    }
+
+    #depositions p {
+        text-align: center;
+    }
+
+    #actual-deposition {
+        min-width: 50px;
+        max-width: 80%;
+    }
+
+    #toggle-deposition {
+        min-width: 50px;
+        max-width: 100%;
+        margin: 20px 0 0;
+    }
+
+    #contact-form .half-input {
+        min-width: 50px;
+        width: 100%;
+        text-align: left;
+    }
+}

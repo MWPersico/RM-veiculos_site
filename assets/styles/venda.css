@@ -1,0 +1,275 @@
+#body-main {
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+}
+
+#sales-content {
+    display: flex;
+    justify-content: center;
+}
+
+.special-title {
+    width: 100%;
+    font-size: 3.5em;
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+    margin: 70px 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.special-title:after,
+.special-title:before {
+    content: '';
+    height: 2px;
+    max-width: 550px;
+    width: 50%;
+    background-color: black;
+    position: relative;
+}
+
+.special-title:after {
+    margin-left: 10px;
+}
+
+.special-title:before {
+    margin-right: 10px;
+}
+
+#showcase-cars {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.showcase-car {
+    margin: 10px;
+}
+
+.showcase-car h3 {
+    max-width: 250px;
+    margin-top: 8px;
+    font-size: 2.2em;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.showcase-car p {
+    max-width: 220px;
+    font-size: 1.8em;
+    font-weight: 500;
+    color: rgb(44, 43, 43);
+}
+
+.car-image {
+    min-width: 200px;
+    max-width: 270px;
+
+}
+
+.car-image img {
+    height: 200px;
+    border-radius: 3px;
+}
+
+.car-btn {
+    background-color: #EB2D2D;
+    color: white;
+    font-size: 2.4em;
+    padding: 8px 12px;
+    border: none;
+    margin-top: 20px;
+    font-weight: 100;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+#price-container {
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+#filters {
+    min-width: 300px;
+    min-height: 400px;
+    margin: 10px;
+}
+
+#filters h3 {
+    font-size: 2.5em;
+    font-weight: 500;
+    color: rgb(36, 35, 35);
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.control {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    padding-top: 0px;
+    cursor: pointer;
+    font-size: 1.6em;
+    font-weight: 500;
+    font-style: italic;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+#range-filter {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+    max-width: 800px;
+}
+
+#range-filter:focus {
+    outline: none;
+}
+
+#range-filter::-webkit-slider-runnable-track {
+    background-color: #d1d1d1;
+    border-radius: 0.5rem;
+    height: 15px;
+}
+
+#range-filter::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -2px;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+#range-filter:focus::-webkit-slider-thumb {
+    outline: 3px solid #e7e7e7;
+    outline-offset: 0.125rem;
+}
+
+#range-filter::-moz-range-track {
+    background-color: #d1d1d1;
+    border-radius: 0.5rem;
+    height: 10px;
+}
+
+#range-filter::-moz-range-thumb {
+    background-color: #e7e7e7;
+    border: none;
+    border-radius: 5px;
+    height: 16px;
+    width: 16px;
+}
+
+#range-filter:focus::-moz-range-thumb {
+    outline: 3px solid #e7e7e7;
+    outline-offset: 0.125rem;
+}
+
+#prices {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+#prices span {
+    font-size: 1.6em;
+    font-weight: 500;
+    color: rgb(49, 47, 47);
+}
+
+.control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.control_indicator {
+    position: absolute;
+    top: 4px;
+    left:0;
+    height: 14px;
+    width: 14px;
+    background: #ffffff;
+    border: 1px solid #acacac;
+    border-radius: 0px;
+}
+
+.control:hover input~.control_indicator,
+.control input:focus~.control_indicator {
+    background: #f4f4f4;
+}
+
+.control_indicator:after {
+    box-sizing: unset;
+    content: "";
+    position: absolute;
+    display: none;
+    width: 6px;
+    height: 6px;
+    border-radius: .5em;
+    background-color: rgb(50, 50, 50);
+}
+
+.control input:checked~.control_indicator:after {
+    display: block;
+}
+
+.control-checkbox .control_indicator:after {
+    left: 3px;
+    top: 3px;
+}
+
+#catalog {
+    max-width: 100%;
+}
+
+@media screen and (max-width:650px) {
+    #sales-content {
+        flex-wrap: wrap;
+    }
+
+    #filters {
+        min-width: 0;
+        width: 100%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    #price-container{
+        width:90%;
+    }
+}
+
+@media screen and (max-width:280px) {
+    .car-image {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .special-title {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+
+    .special-title::after,
+    .special-title::before {
+        display: none;
+    }
+}

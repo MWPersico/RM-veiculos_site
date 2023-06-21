@@ -1,0 +1,99 @@
+#body-main {
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+}
+
+.special-title {
+    width: 100%;
+    font-size: 3.5em;
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+    margin: 70px 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.special-title:after,
+.special-title:before {
+    content: '';
+    height: 2px;
+    max-width: 550px;
+    width: 50%;
+    background-color: black;
+    position: relative;
+}
+
+.special-title:after {
+    margin-left: 10px;
+}
+
+.special-title:before {
+    margin-right: 10px;
+}
+
+#galery-content{
+    margin:0 auto;
+    max-width:1200px;
+    width:100%;
+    margin-bottom:200px;
+}
+
+#main-car{
+    width:100%;
+    height:550px;
+    border:17px solid #C2C2C2;
+    background-image:url(../images/carro4.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    position:relative;
+    margin-bottom:10px;
+    z-index:-1;
+}
+
+.car-btn {
+    background-color: #EB2D2D;
+    max-width:100%;
+    width:220px;
+    color: white;
+    font-size: 2.8em;
+    padding: 13px 15px;
+    border: none;
+    margin-top: 20px;
+    font-weight: 100;
+    cursor: pointer;
+    border-radius: 2px;
+    position:absolute;
+    right:-17px;
+    bottom:50px;
+}
+
+#cars-grade{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:space-around;
+    justify-content:space-around;
+    padding:0 -10px;
+}
+
+.grade-item{
+    margin:10px;
+    height:140px;
+    width:280px;
+    max-width:100%;
+    background-color:#C2C2C2;
+}
+
+@media screen and (max-width:100px){
+    .special-title{
+        display:block;
+        word-wrap:break-word;
+        max-width:90%;
+    }
+}

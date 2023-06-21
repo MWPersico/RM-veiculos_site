@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Oswald', sans-serif;
+    font-size:10px;
+}
+
+img{
+    width:100%;
+}
+
+html,
+body{
+    width:100%;
+}
+
+a{
+    text-decoration:none;
+}
+
+button:hover{
+    opacity:.9
+}
+
+#body-header a:visited,
+#body-header a{
+    color:rgb(8, 8, 8);
+}
+
+#body-footer a:visited,
+#body-footer a{
+    color:rgba(255, 255, 255, 0.95);
+}
+
+#body-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px 80px;
+}
+
+#hamburguer-menu {
+    margin:10px;
+    display: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+#hamburguer-menu span {
+    display: block;
+    width: 35px;
+    height: 6px;
+    background-color: #000;
+    border-radius: 10px;
+    transition: width .5s;
+    background-color:red;
+    margin-bottom:4px;
+}
+
+#hamburguer-menu span:last-child{
+    margin-bottom:0;
+}
+
+.links-list{
+    display:flex;
+    list-style:none;
+    align-items:center;
+}
+
+.link-item{
+    margin-right:40px;
+    font-style: italic;
+    font-weight:500;
+    cursor: pointer;
+}
+
+.link-item:hover{
+    opacity:.8;
+}
+
+.link-item a{
+    font-size:2.3em;
+}
+
+.link-item:last-child{
+    margin-right:0;
+}
+
+#body-footer{
+    background-color:#252525;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:40px 50px;
+    flex-wrap:wrap;
+}
+
+#footer-links .links-list{
+    flex-wrap:wrap;
+}
+
+#body-footer .link-item{
+    color:white;
+    font-size:.9em
+}
+
+#rights p{
+    font-size:1.9em;
+    color:white;
+    font-style:italic;
+}
+
+#rights b{
+    font-size:1em;
+}
+
+/* Hamburguer menu classes: */
+
+.active {
+    width: 50% !important;
+}
+
+.opened span.top {
+    transform: rotate(45deg) translate(10px);
+}
+
+.opened span.middle {
+    transform: translateX(20px);
+    opacity: 0;
+    display: none;
+}
+
+.opened span.bottom {
+    transform: rotate(-45deg) translate(14px, -5px);
+}
+
+.actual{
+    color:red !important;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #333234 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 13px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, .1);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(49, 49, 50);
+    border-radius: 2px;
+    border: 2px solid #ffffff;
+  }
+
+/* Media Queries: */
+
+@media screen and (max-width:1000px){
+    #hamburguer-menu{
+        display:block;
+    }
+
+    #header-links .links-list{
+        flex-direction:column;
+        position:absolute;
+        top:0;
+        left:0;
+        width:50%;
+        max-height:100vh;
+        height:100%;
+        justify-content:space-evenly;
+        padding:30px 0;
+        overflow:hidden;
+        background-color:rgba(255,255,255,.9);
+        border:1px solid black;
+        transition:.2s;
+        width:0;
+    }
+
+    #header-links .link-item{
+        margin:0;
+        font-size:2em;
+    }
+
+    #body-footer{
+        justify-content:center;
+    }
+
+    #footer-links .links-list{
+        max-width:100%;
+        margin-bottom:20px;
+        justify-content:space-evenly;
+        align-items:center;
+    }
+
+    #footer-links .link-item{
+        margin:10px;
+        word-wrap:break-word;
+    }
+}
+
+@media screen and (max-width:450px){
+    #body-header{
+        padding:30px 10px;
+        flex-wrap:wrap;
+        justify-content:space-around;
+    }
+
+    #header-links .links-list{
+        top:147px;
+        max-height:80vh;
+    }
+
+    #header-links .active{
+        width:100% !important;
+    }
+
+    #footer-links .link-item{
+        font-size:1.1em;
+    }
+
+    #body-footer{
+        padding:40px 5px;
+    }
+}
+
+@media screen and (max-width:280px){
+    #header-logo{
+        margin-bottom:20px;
+        min-width:100%;
+    }
+    
+    #header-links .links-list{
+        top:180px;
+    }
+
+    *{
+        max-width:100% !important;
+        margin-left:0 !important;
+        margin-right:0 !important;
+        word-wrap:break-word !important;
+    }
+}
